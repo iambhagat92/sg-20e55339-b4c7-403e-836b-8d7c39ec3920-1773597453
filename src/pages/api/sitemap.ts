@@ -1,11 +1,18 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { getAllCalculators, categories } from "@/data/calculators";
 
+interface SitemapUrl {
+  loc: string;
+  priority: string;
+  changefreq: string;
+  lastmod?: string;
+}
+
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   const baseUrl = "https://smartcalchub.com";
   const calculators = getAllCalculators();
 
-  const urls = [
+  const urls: SitemapUrl[] = [
     { loc: baseUrl, priority: "1.0", changefreq: "daily" },
     ...categories.map((cat) => ({
       loc: `${baseUrl}/category/${cat.slug}`,
