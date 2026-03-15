@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,75 +12,83 @@
 
 @layer base {
   :root {
-    --radius: 0.55rem;
+    --radius: 0.625rem;
     --background: 0 0% 100%;
-    --foreground: 330 0% 0.3%;
+    --foreground: 222 47% 11%;
     --card: 0 0% 100%;
-    --card-foreground: 330 0% 0.3%;
+    --card-foreground: 222 47% 11%;
     --popover: 0 0% 100%;
-    --popover-foreground: 330 0% 0.3%;
-    --primary: 0 0% 4.5%;
-    --primary-foreground: 0 0% 97.5%;
-    --secondary: 0 0% 97.3%;
-    --secondary-foreground: 0 0% 4.5%;
-    --muted: 0 0% 97.3%;
-    --muted-foreground: 0 0% 55.7%;
-    --accent: 0 0% 97.3%;
-    --accent-foreground: 0 0% 4.5%;
-    --destructive: 359.9132 100.2494% 67.8807%;
-    --destructive-foreground: 0 0% 0%;
-    --border: 0 0% 92.2%;
-    --input: 0 0% 92.2%;
-    --ring: 0 0% 70.8%;
-    --chart-1: 41.1 71.2% 54.4%;
-    --chart-2: 184.7 32.4% 48.6%;
-    --chart-3: 227.4 15.2% 33.3%;
-    --chart-4: 84.4 74.8% 75.7%;
-    --chart-5: 70.1 74.3% 70.5%;
-    --sidebar: 0 0% 97.5%;
-    --sidebar-foreground: 330 0% 0.3%;
-    --sidebar-primary: 0 0% 4.5%;
-    --sidebar-primary-foreground: 0 0% 97.5%;
-    --sidebar-accent: 0 0% 97.3%;
-    --sidebar-accent-foreground: 0 0% 4.5%;
-    --sidebar-border: 0 0% 92.2%;
-    --sidebar-ring: 0 0% 70.8%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 243 75% 59%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 220 14% 96%;
+    --accent-foreground: 222 47% 11%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 243 75% 59%;
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --chart-1: 243 75% 59%;
+    --chart-2: 142 71% 45%;
+    --chart-3: 38 92% 50%;
+    --chart-4: 0 84% 60%;
+    --chart-5: 199 89% 48%;
+    --sidebar: 0 0% 98%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 243 75% 59%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 14% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 243 75% 59%;
   }
 
   .dark {
-    --radius: 0.55rem;
-    --background: 330 0% 0.3%;
-    --foreground: 0 0% 97.5%;
-    --card: 0 0% 4.5%;
-    --card-foreground: 0 0% 97.5%;
-    --popover: 0 0% 8.6%;
-    --popover-foreground: 0 0% 97.5%;
-    --primary: 0 0% 92.2%;
-    --primary-foreground: 0 0% 4.5%;
-    --secondary: 0 0% 8.6%;
-    --secondary-foreground: 0 0% 97.5%;
-    --muted: 0 0% 8.6%;
-    --muted-foreground: 0 0% 70.8%;
-    --accent: 0 0% 21.2%;
-    --accent-foreground: 0 0% 97.5%;
-    --destructive: 359.9132 100.2494% 67.8807%;
-    --destructive-foreground: 0 0% 0%;
-    --border: 0 0% 100% / 15%;
-    --input: 0 0% 100% / 15%;
-    --ring: 0 0% 55.7%;
-    --chart-1: 264.4 77.2% 41.9%;
-    --chart-2: 162.5 46.7% 57.3%;
-    --chart-3: 70.1 74.3% 70.5%;
-    --chart-4: 303.9 75.8% 51.6%;
-    --chart-5: 16.4 84.7% 55.4%;
-    --sidebar: 0 0% 4.5%;
-    --sidebar-foreground: 0 0% 97.5%;
-    --sidebar-primary: 264.4 77.2% 41.9%;
-    --sidebar-primary-foreground: 0 0% 97.5%;
-    --sidebar-accent: 0 0% 8.6%;
-    --sidebar-accent-foreground: 0 0% 97.5%;
-    --sidebar-border: 0 0% 100% / 10%;
-    --sidebar-ring: 0 0% 43.9%;
+    --radius: 0.625rem;
+    --background: 222 47% 4%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 8%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 8%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 243 75% 59%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 222 47% 15%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 222 47% 15%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 222 47% 15%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 222 47% 15%;
+    --input: 222 47% 15%;
+    --ring: 243 75% 59%;
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --chart-1: 243 75% 59%;
+    --chart-2: 142 71% 45%;
+    --chart-3: 38 92% 50%;
+    --chart-4: 0 84% 60%;
+    --chart-5: 199 89% 48%;
+    --sidebar: 222 47% 8%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 243 75% 59%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 222 47% 15%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 222 47% 15%;
+    --sidebar-ring: 243 75% 59%;
   }
 }
 
@@ -86,13 +96,61 @@
   * {
     @apply border-border;
   }
+  html {
+    @apply scroll-smooth;
+  }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-semibold tracking-tight;
+  }
+  code, pre {
+    @apply font-mono;
   }
 }
 
 @layer components {
   .container {
-    @apply mx-auto px-4 md:px-6 lg:px-8 max-w-7xl w-full;
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl w-full;
+  }
+  
+  .calculator-card {
+    @apply bg-card border border-border rounded-xl shadow-sm;
+  }
+  
+  .input-field {
+    @apply flex h-12 w-full rounded-lg border border-input bg-background px-4 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 transition-colors;
+  }
+  
+  .result-display {
+    @apply bg-primary/5 border border-primary/20 rounded-lg p-4 text-center;
+  }
+  
+  .result-value {
+    @apply text-3xl sm:text-4xl font-mono font-semibold text-primary;
+  }
+  
+  .formula-box {
+    @apply bg-muted/50 border border-border rounded-lg p-4 font-mono text-sm text-muted-foreground;
+  }
+  
+  .seo-section {
+    @apply prose prose-slate dark:prose-invert max-w-none;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent;
   }
 }
