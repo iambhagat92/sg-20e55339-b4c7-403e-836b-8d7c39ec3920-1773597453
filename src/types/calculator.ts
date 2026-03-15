@@ -16,7 +16,7 @@ export interface CalculatorInput {
 export interface CalculatorOutput {
   id: string;
   label: string;
-  format?: "number" | "currency" | "percentage" | "time";
+  format?: "number" | "currency" | "percentage" | "time" | "text";
   currency?: string;
   decimals?: number;
   unit?: string;
